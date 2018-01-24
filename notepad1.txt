@@ -1,0 +1,19 @@
+Reusable Actions:  can be used in other Tests. They can be used in the same Test Script multiple times.
+Non-Reusable Actions: can not be used in other Tests. They can be called in the same script only once.
+
+if an action becomes big, its a nice practise to split it. You can split an existing action in two ways
+
+  Independent of each other which splits the selected action into two sibling actions
+  Nested Action which splits the selected action into a parent action whose last step calls the second, child action.
+
+Action can access test data stored in datasheets. QTP provide 2 type of datasheets
+1.GLOBAL Datasheet- It is unique for entire test.  Action can access and write data into Global Datasheet. sheet is GLOBAL.
+2.LOCAL Datasheet- Equal to number of Actions in the sheet. Action can read and write data into its own local datasheet.
+sheet name = "ACTION NAME"
+
+Purpose of creating Actions is used in other Test Scripts.
+1.Call to COPY of an Action
+2.Call to an Existing Action
+
+Error message can be stored and retreived in Output value.
+2.LOCAL Datasheet- 
